@@ -47,7 +47,11 @@ public class Board {
         } else if (sum2 > sum0 && sum2 > sum1) {
             System.out.println("Największa suma liczb jest w wierszu 3 i wynosi " + sum2 + ".");
 
+        } else if (sum0==sum1 && sum1==sum2){
+            System.out.println("Sumy wszystkich wierszy są równe.");
+
         }
+
     userNumber.close();
     }
 }

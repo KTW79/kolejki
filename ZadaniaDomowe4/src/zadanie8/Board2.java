@@ -24,20 +24,25 @@ public class Board2 {
                 sum[j] = sum[j] + tab[i][j];
                 i++;
             }
+            System.out.println();
             System.out.println("suma w rzędzie: " + j + " wynosi : " + sum[j]);
+            System.out.println();
             j++;
             i = 0;
         }
         System.out.println();
 
         if (sum[0] > sum[1] && sum[0] > sum[2]) {
-                System.out.println("Największa suma liczb jest w wierszu 1 i wynosi " + sum[0] + ".");
+            System.out.println("Największa suma liczb jest w wierszu 1 i wynosi " + sum[0] + ".");
 
         } else if (sum[1] > sum[0] && sum[1] > sum[2]) {
-                System.out.println("Największa suma liczb jest w wierszu 2 i wynosi " + sum[1] + ".");
+            System.out.println("Największa suma liczb jest w wierszu 2 i wynosi " + sum[1] + ".");
 
         } else if (sum[2] > sum[0] && sum[2] > sum[1]) {
-                System.out.println("Największa suma liczb jest w wierszu 3 i wynosi " + sum[2] + ".");
+            System.out.println("Największa suma liczb jest w wierszu 3 i wynosi " + sum[2] + ".");
+        }
+          else if (sum[0]==sum[1] && sum[1]==sum[2]) {
+            System.out.println("Sumy wszystkich wierszy są równe.");
 
         }
         userNumber.close();
